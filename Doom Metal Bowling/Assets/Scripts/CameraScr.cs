@@ -29,7 +29,7 @@ namespace gamespace
                     break;
 
                 case false:
-                    transform.position = new Vector3(wall.transform.position.x - 17, wall.transform.position.y + 6.17f, wall.transform.position.z);
+                    transform.position = new Vector3(wall.transform.position.x - 38, wall.transform.position.y + 6.17f, wall.transform.position.z);
                     if (ball.transform.position.y >=0)
                     {
                         mode = true;

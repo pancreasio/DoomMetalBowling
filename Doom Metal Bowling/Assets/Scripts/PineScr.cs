@@ -6,16 +6,26 @@ namespace gamespace
 {
     public class PineScr : MonoBehaviour
     {
-        void Update()
-        {
-            //if (transform.rotation.eulerAngles.x > 70 || transform.rotation.eulerAngles.x < -70)
-            //{
-            //    Destroy(this.gameObject);
-            //}
+        public Transform pineObject;
+        public AudioSource explosion;
 
-            if (transform.rotation.eulerAngles.z > 90 || transform.rotation.eulerAngles.z < -90)
+        private void Update()
+        {
+            if (transform.position.y <= 0)
             {
-                Destroy(this.gameObject);
+                Instantiate(explosion);
+                explosion.transform.SetParent(null);
+                pineObject.gameObject.SetActive(false);
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Wall" || other.tag == "Floor")
+            {
+                Instantiate(explosion);
+                explosion.transform.SetParent(null);
+                pineObject.gameObject.SetActive(false);
             }
         }
     }

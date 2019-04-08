@@ -41,7 +41,7 @@ namespace gamespace
             }
             for (int i = 0; i < pineArray.Length; i++)
             {
-                if (pineArray[i] == null)
+                if (!pineArray[i].gameObject.activeSelf)
                 {
                     pineCount--;
                 }
