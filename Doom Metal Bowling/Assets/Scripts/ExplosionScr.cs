@@ -6,7 +6,7 @@ public class ExplosionScr : MonoBehaviour
 {
     void Start()
     {
-        GetComponent<AudioSource>().Play(); 
+        //GetComponent<AudioSource>().Play(); 
     }
 
     void Update()

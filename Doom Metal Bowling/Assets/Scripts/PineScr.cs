@@ -7,7 +7,7 @@ namespace gamespace
     public class PineScr : MonoBehaviour
     {
         public Transform pineObject;
-        public AudioSource explosion;
+        public GameObject explosion;
 
         private void Update()
         {

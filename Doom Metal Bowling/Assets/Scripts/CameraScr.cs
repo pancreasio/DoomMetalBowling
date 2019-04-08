@@ -26,11 +26,16 @@ namespace gamespace
                     {
                         mode = false;
                     }
+                    if (!ball.gameObject.activeSelf)
+                    {
+                        mode = false;
+                    }
+
                     break;
 
                 case false:
                     transform.position = new Vector3(wall.transform.position.x - 38, wall.transform.position.y + 6.17f, wall.transform.position.z);
-                    if (ball.transform.position.y >=0)
+                    if (ball.transform.position.y >=0 && ball.gameObject.activeSelf)
                     {
                         mode = true;
                     }

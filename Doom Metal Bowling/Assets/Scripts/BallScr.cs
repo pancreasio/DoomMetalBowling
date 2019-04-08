@@ -20,6 +20,8 @@ namespace gamespace
         public float modifier;
         public int lives;
 
+        public GameObject explosion;
+
         void Start()
         {
             mode = false;
@@ -75,6 +77,15 @@ namespace gamespace
                         }
                     }
                     break;
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.transform.tag == "Wall")
+            {
+                Instantiate(explosion);
+                gameObject.SetActive(false);
             }
         }
     }

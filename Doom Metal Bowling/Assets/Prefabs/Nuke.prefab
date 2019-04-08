@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2233184644780334314
+--- !u!1 &2639994152281197038
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5209951993047665300}
-  - component: {fileID: 1045933152300795599}
+  - component: {fileID: 1564436928063754299}
+  - component: {fileID: 6306560589339283286}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: Nuke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5209951993047665300
+--- !u!4 &1564436928063754299
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2233184644780334314}
+  m_GameObject: {fileID: 2639994152281197038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.124294, y: -0.49131012, z: 3.0576649}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1045933152300795599
+--- !u!82 &6306560589339283286
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2233184644780334314}
+  m_GameObject: {fileID: 2639994152281197038}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0c37a8f7fcfa93e42bda7de914168b4e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.226
-  m_Pitch: 2.89
+  m_Volume: 0.328
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
