@@ -296,13 +296,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564b3ca04c7ca9c4d8824e76ae49a7d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
-  rightLimit: 20
-  leftLimit: -20
-  forceLimit: 0
-  transSpeed: 2
-  modifier: 0
-  lives: 0
+  rotationSpeed: 7
+  rightLimit: 2.249872
+  leftLimit: -2.197592
+  forceLimit: 50
+  transSpeed: 3.2
+  modifier: 1.5
+  lives: 3
   explosion: {fileID: 2639994152281197038, guid: 5e8095087b35d984f85119872c108f22,
     type: 3}
 --- !u!1 &8792917982994643260

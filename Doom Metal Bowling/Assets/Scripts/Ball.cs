@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace gamespace
 {
-    public class BallScr : MonoBehaviour
+    public class Ball : MonoBehaviour
     {
         private bool mode;
         private float initialForce;

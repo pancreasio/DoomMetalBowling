@@ -4,9 +4,11 @@ using UnityEngine;
 
 namespace gamespace
 {
-    public class CameraScr : MonoBehaviour
+    public class CustomCamera : MonoBehaviour
     {
         public Transform ball, wall;
+        public float followX, followY, finalX, finalY;
+
 
         private Transform initial;
         private bool mode;
@@ -21,7 +23,7 @@ namespace gamespace
             switch (mode)
             {
                 case true:
-                    transform.position = new Vector3(ball.transform.position.x - 8.3f, ball.transform.position.y + 6.17f, ball.transform.position.z);
+                    transform.position = new Vector3(ball.transform.position.x + followX, ball.transform.position.y + followY, ball.transform.position.z);
                     if (transform.position.y < 5)
                     {
                         mode = false;
@@ -34,7 +36,7 @@ namespace gamespace
                     break;
 
                 case false:
-                    transform.position = new Vector3(wall.transform.position.x - 38, wall.transform.position.y + 6.17f, wall.transform.position.z);
+                    transform.position = new Vector3(wall.transform.position.x + finalX, wall.transform.position.y + finalY, wall.transform.position.z);
                     if (ball.transform.position.y >=0 && ball.gameObject.activeSelf)
                     {
                         mode = true;
